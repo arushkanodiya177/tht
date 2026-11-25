@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>THE HIGH TRIBE — Rooftop Lounge & Restaurant</title>
+  <!-- Fonts & Icons via CDN (graceful fallback) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-ring"></div>
+    <span class="loader-text">THT</span>
+  </div>
+
+  <!-- Sticky Navigation -->
+  <header id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon"><i class="fas fa-crown"></i></span>
+        <span class="logo-text">THE HIGH TRIBE</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#experiences" class="nav-link">Experiences</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#games" class="nav-link">Games</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#" class="nav-link" id="loginNavBtn">Login / Sign Up</a>
+        <a href="#menu" class="nav-link nav-order-btn">Order Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title animate-on-scroll">THE HIGH TRIBE</h1>
+      <p class="hero-subtitle animate-on-scroll">Elevate Your Evening</p>
+      <p class="hero-desc animate-on-scroll">A rooftop experience where extraordinary food, music, and moments come together.</p>
+      <div class="hero-buttons animate-on-scroll">
+        <a href="#menu" class="btn btn-gold">Explore Menu</a>
+        <a href="#reservation" class="btn btn-outline">Reserve a Table</a>
+        <a href="#about" class="btn btn-outline">Discover Our Story</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Our Story</span>
+        <h2 class="section-title">The Rooftop Awaits</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text animate-on-scroll">
+          <p>Perched atop B Square in the heart of Rewa, THE HIGH TRIBE is more than a restaurant — it's a destination. A rooftop sanctuary where the city skyline meets the stars, and every evening becomes a celebration.</p>
+          <p>From premium dining under the open sky to curated nightlife experiences, we blend culinary artistry with an atmosphere of refined luxury. Whether it's an intimate dinner, a lively gathering, or a private event, our rooftop sets the stage for unforgettable moments.</p>
+          <div class="about-highlights">
+            <div class="highlight-item"><i class="fas fa-building"></i> Rooftop Atmosphere</div>
+            <div class="highlight-item"><i class="fas fa-utensils"></i> Premium Dining</div>
+            <div class="highlight-item"><i class="fas fa-music"></i> Live Music & Nightlife</div>
+            <div class="highlight-item"><i class="fas fa-glass-cheers"></i> Private Events</div>
+          </div>
+        </div>
+        <div class="about-image animate-on-scroll">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&q=80" alt="Rooftop interior" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section gallery-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Gallery</span>
+        <h2 class="section-title">Moments at The High Tribe</h2>
+      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <!-- Highlights / Experiences -->
+  <section id="experiences" class="section highlights-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Experiences</span>
+        <h2 class="section-title">Signature Highlights</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="highlight-card animate-on-scroll">
+          <i class="fas fa-sun"></i>
+          <h3>Rooftop Dining</h3>
+          <p>Dine under the stars with panoramic views and a curated menu.</p>
+        </div>
+        <div class="highlight-card animate-on-scroll">
+          <i class="fas fa-cocktail"></i>
+          <h3>Premium Lounge</h3>
+          <p>Relax in our elegant lounge with handcrafted cocktails and mocktails.</p>
+        </div>
+        <div class="highlight-card animate-on-scroll">
+          <i class="fas fa-guitar"></i>
+          <h3>Live Music</h3>
+          <p>Enjoy live performances that set the perfect mood for the evening.</p>
+        </div>
+        <div class="highlight-card animate-on-scroll">
+          <i class="fas fa-calendar-alt"></i>
+          <h3>Private Events</h3>
+          <p>Host your celebrations in a sophisticated rooftop setting.</p>
+        </div>
+        <div class="highlight-card animate-on-scroll">
+          <i class="fas fa-users"></i>
+          <h3>Group Celebrations</h3>
+          <p>From birthdays to corporate gatherings, we make it memorable.</p>
+        </div>
+        <div class="highlight-card animate-on-scroll">
+          <i class="fas fa-star"></i>
+          <h3>Signature Experiences</h3>
+          <p>Curated evenings with chef specials and exclusive events.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Menu Section -->
+  <section id="menu" class="section menu-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Digital Menu</span>
+        <h2 class="section-title">Savour the Flavours</h2>
+      </div>
+      <div class="menu-controls animate-on-scroll">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" id="menuSearch" placeholder="Search menu items...">
+        </div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="veg">Veg</button>
+          <button class="filter-btn" data-filter="nonveg">Non-Veg</button>
+        </div>
+        <div class="category-tabs" id="categoryTabs"></div>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+      <div class="cart-float" id="cartFloat" role="button" tabindex="0">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Modal -->
+  <div class="modal-overlay" id="cartModal">
+    <div class="modal cart-modal">
+      <div class="modal-header">
+        <h3><i class="fas fa-shopping-bag"></i> Your Cart</h3>
+        <button class="modal-close" id="closeCartBtn">&times;</button>
+      </div>
+      <div class="modal-body" id="cartItems"></div>
+      <div class="modal-footer" id="cartFooter">
+        <div class="cart-totals" id="cartTotals"></div>
+        <button class="btn btn-gold" id="checkoutBtn">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reservation Section -->
+  <section id="reservation" class="section reservation-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Book a Table</span>
+        <h2 class="section-title">Reserve Your Evening</h2>
+      </div>
+      <form id="reservationForm" class="reservation-form animate-on-scroll">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="resName">Full Name</label>
+            <input type="text" id="resName" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="resPhone">Phone Number</label>
+            <input type="tel" id="resPhone" required placeholder="+91 9876543210">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="resDate">Date</label>
+            <input type="date" id="resDate" required>
+          </div>
+          <div class="form-group">
+            <label for="resTime">Time</label>
+            <input type="time" id="resTime" required>
+          </div>
+          <div class="form-group">
+            <label for="resGuests">Guests</label>
+            <input type="number" id="resGuests" min="1" max="20" value="2" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="resRequest">Special Request</label>
+          <textarea id="resRequest" rows="2" placeholder="Any special requests?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold">Confirm Reservation</button>
+        <p class="form-note">Demo only — reservations are stored locally.</p>
+      </form>
+      <div id="resConfirmation" class="res-confirmation hidden"></div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="events" class="section events-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">What's On</span>
+        <h2 class="section-title">Upcoming Events</h2>
+      </div>
+      <div class="events-grid" id="eventsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Games Section -->
+  <section id="games" class="section games-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Play While You Wait</span>
+        <h2 class="section-title">Games & Fun</h2>
+      </div>
+      <div class="games-grid">
+        <div class="game-card animate-on-scroll">
+          <i class="fas fa-times"></i>
+          <h3>Tic-Tac-Toe</h3>
+          <p>Classic two-player game.</p>
+          <button class="btn btn-outline game-btn" data-game="tictactoe">Play</button>
+        </div>
+        <div class="game-card animate-on-scroll">
+          <i class="fas fa-clone"></i>
+          <h3>Memory Match</h3>
+          <p>Flip and match symbols.</p>
+          <button class="btn btn-outline game-btn" data-game="memory">Play</button>
+        </div>
+        <div class="game-card animate-on-scroll">
+          <i class="fas fa-question-circle"></i>
+          <h3>Quick Quiz</h3>
+          <p>Test your food knowledge.</p>
+          <button class="btn btn-outline game-btn" data-game="quiz">Play</button>
+        </div>
+        <div class="game-card animate-on-scroll">
+          <i class="fas fa-users"></i>
+          <h3>Group Challenge</h3>
+          <p>Fun table challenges.</p>
+          <button class="btn btn-outline game-btn" data-game="challenge">Play</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Game Modal -->
+  <div class="modal-overlay" id="gameModal">
+    <div class="modal game-modal">
+      <div class="modal-header">
+        <h3 id="gameTitle">Game</h3>
+        <button class="modal-close" id="closeGameBtn">&times;</button>
+      </div>
+      <div class="modal-body" id="gameBody"></div>
+    </div>
+  </div>
+
+  <!-- Login / Signup Modal -->
+  <div class="modal-overlay" id="loginModal">
+    <div class="modal login-modal">
+      <div class="modal-header">
+        <h3 id="loginModalTitle">Login / Sign Up</h3>
+        <button class="modal-close" id="closeLoginBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="login-tabs">
+          <button class="login-tab active" data-tab="login">Login</button>
+          <button class="login-tab" data-tab="signup">Sign Up</button>
+        </div>
+        <form id="loginForm" class="login-form">
+          <div class="form-group">
+            <label for="loginEmail">Email or Phone</label>
+            <input type="text" id="loginEmail" required placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" required placeholder="••••••••">
+          </div>
+          <div class="form-group role-group" id="roleGroup">
+            <label>Role (demo)</label>
+            <select id="loginRole">
+              <option value="customer">Customer</option>
+              <option value="admin">Admin</option>
+              <option value="coworker">Coworker</option>
+              <option value="kitchen">Kitchen</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-gold" id="loginSubmitBtn">Login</button>
+          <p class="form-note">Demo authentication — no real security.</p>
+        </form>
+        <div id="loginFeedback" class="login-feedback"></div>
+        <div class="demo-accounts">
+          <p><strong>Demo accounts:</strong><br>
+          admin@tht.com / admin123 (Admin)<br>
+          staff@tht.com / staff123 (Coworker)<br>
+          kitchen@tht.com / kitchen123 (Kitchen)<br>
+          customer@tht.com / cust123 (Customer)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dashboard Modal (Admin / Coworker / Kitchen) -->
+  <div class="modal-overlay" id="dashboardModal">
+    <div class="modal dashboard-modal">
+      <div class="modal-header">
+        <h3 id="dashboardTitle">Dashboard</h3>
+        <button class="modal-close" id="closeDashboardBtn">&times;</button>
+      </div>
+      <div class="modal-body" id="dashboardBody"></div>
+    </div>
+  </div>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="section reviews-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Feedback</span>
+        <h2 class="section-title">Share Your Experience</h2>
+      </div>
+      <div class="review-box animate-on-scroll">
+        <div class="star-rating" id="starRating">
+          <i class="far fa-star" data-rating="1"></i>
+          <i class="far fa-star" data-rating="2"></i>
+          <i class="far fa-star" data-rating="3"></i>
+          <i class="far fa-star" data-rating="4"></i>
+          <i class="far fa-star" data-rating="5"></i>
+        </div>
+        <textarea id="reviewText" placeholder="Tell us about your experience..." rows="3"></textarea>
+        <button class="btn btn-gold" id="submitReviewBtn">Submit Feedback</button>
+        <p class="form-note">Demo feedback. To post publicly, use Google Reviews.</p>
+        <a href="https://www.google.com/search?client=safari&hs=0qOW&sca_esv=e7cd0cc5760d080e&hl=en-in&sxsrf=AKL5yDjSh-99ryXo2DcWxlYqmnhGljXALw:1795614095542&q=the+high+tribe+lounge+%28+tht+%29+reviews&si=AE1YtOqiKPb2pdLXAi8quZ9vbH4aVq_aX8-3H9iFBLpRNK95c5oCN0mtW9wUy3D7PlEr6moyGhFgDpGqJLGzllg81SpVKwPxEyxs8fUhQmOnuuMsLSqKlucwAYOOKS9ZGG6wZfc629Ojx8urSO1TymrVGUM_SRAJLg%3D%3D&sa=X&ictx=1&biw=393&bih=735&dpr=3&sei=luUGa8O8BY-MseMPtdCcwAM&dlnr=1#:~:text=Highest-,Lowest" target="_blank" class="btn btn-outline" style="margin-top:1rem;">Open Google Reviews</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location / Contact Section -->
+  <section id="location" class="section location-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Find Us</span>
+        <h2 class="section-title">Visit The High Tribe</h2>
+      </div>
+      <div class="location-grid">
+        <div class="location-info animate-on-scroll">
+          <p><i class="fas fa-map-marker-alt"></i> The High Tribe, Rooftop of B Square, near Tala House Campus, Amaiya Colony, Allahabad Road, Rewa, Madhya Pradesh 486001, India</p>
+          <p><i class="fas fa-phone-alt"></i> <a href="tel:+919617778222">+91 96177 78222</a></p>
+          <div class="location-buttons">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=The+High+Tribe+B+Square+Rewa" target="_blank" class="btn btn-gold"><i class="fas fa-directions"></i> Get Directions</a>
+            <a href="tel:+919617778222" class="btn btn-outline"><i class="fas fa-phone"></i> Call Restaurant</a>
+            <a href="https://www.instagram.com/tht_bellamy?dmpr=OWkxbjNxOTR6Y3g5" target="_blank" class="btn btn-outline"><i class="fab fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+        <div class="location-map animate-on-scroll">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.765!2d81.3!3d24.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zVGhlIEhpZ2ggVHJpYmU!5e0!3m2!1sen!2sin!4v1" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text">THE HIGH TRIBE</span>
+          <p>Rooftop of B Square, near Tala House Campus, Amaiya Colony, Allahabad Road, Rewa, MP 486001</p>
+          <p><a href="tel:+919617778222">+91 96177 78222</a></p>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <a href="#hero">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#experiences">Experiences</a>
+          <a href="#events">Events</a>
+          <a href="#games">Games</a>
+          <a href="#reviews">Reviews</a>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <a href="https://www.instagram.com/tht_bellamy?dmpr=OWkxbjNxOTR6Y3g5" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="https://www.google.com/search?client=safari&hs=0qOW&sca_esv=e7cd0cc5760d080e&hl=en-in&sxsrf=AKL5yDjSh-99ryXo2DcWxlYqmnhGljXALw:1795614095542&q=the+high+tribe+lounge+%28+tht+%29+reviews&si=AE1YtOqiKPb2pdLXAi8quZ9vbH4aVq_aX8-3H9iFBLpRNK95c5oCN0mtW9wUy3D7PlEr6moyGhFgDpGqJLGzllg81SpVKwPxEyxs8fUhQmOnuuMsLSqKlucwAYOOKS9ZGG6wZfc629Ojx8urSO1TymrVGUM_SRAJLg%3D%3D&sa=X&ictx=1&biw=393&bih=735&dpr=3&sei=luUGa8O8BY-MseMPtdCcwAM&dlnr=1#:~:text=Highest-,Lowest" target="_blank"><i class="fas fa-star"></i> Google Reviews</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 THE HIGH TRIBE. All rights reserved. Demo website.</p>
+        <button id="resetDemoBtn" class="reset-btn"><i class="fas fa-redo"></i> Reset Demo Data</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox for gallery -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <span class="lightbox-prev" id="lightboxPrev">&#10094;</span>
+    <img id="lightboxImg" src="" alt="Gallery image">
+    <span class="lightbox-next" id="lightboxNext">&#10095;</span>
+  </div>
+
+  <!-- Toast notification -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
